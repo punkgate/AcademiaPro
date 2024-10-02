@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect } from "react";
 import { useAttendancePrediction } from "@/hooks/useAttendancePredict";
 import Error from "@/components/States/Error";
@@ -26,6 +27,7 @@ export default function PredictionContent({
     isLoading: isLoadingCalendar,
     error: calendarError,
   } = usePlanner();
+  
   const {
     timetable,
     attendance,
